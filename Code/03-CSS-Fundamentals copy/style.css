@@ -1,3 +1,6 @@
+* {
+}
+
 h1,
 h2,
 h3,
@@ -43,3 +46,5 @@ footer p {
 article header p {
   font-style: italic;
 }
+
+/* Resolving conflicts */
