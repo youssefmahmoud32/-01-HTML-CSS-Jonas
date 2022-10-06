@@ -1,6 +1,6 @@
 # Build Responsive Real-World Websites with HTML and CSS
 ## Challenges
-- [x] [Section 2 – Challenge #2](./Challenges/01-Challenges/Challenge/)
+- [x] [Section 2 – Challenge #2](https://github.com/youssefmahmoud32/-01-HTML-CSS-Jonas/tree/main/Challenges/01-Challenge)
 - [x] [Section 3 – Challenge #1](./Challenges/02-Challenges/)
 - [x] [Section 3 – Challenge #2](./Challenges/03-Challenges/)
 - [ ] [Section 3 – Challenge #3](./Challenges/04-Challenges/)
