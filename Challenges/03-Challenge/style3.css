@@ -70,3 +70,9 @@ ul {
   color: #000;
   background-color: white;
 }
+
+/* Flex */
+
+.price {
+  display: flex;
+}
