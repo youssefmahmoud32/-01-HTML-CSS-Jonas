@@ -49,31 +49,39 @@
 
       /* FLEXBOX */
       display: flex;
-      /* flex-direction: column; */
+      /* justify-content: space-between; */
       align-items: center;
-      justify-content: flex-start;
       gap: 30px;
     }
 
     .el {
-      /* Defults */
+      /* Defults:
       flex-grow: 0;
       flex-shrink: 1;
       flex-basis: auto;
+      ;*/
+
+      /* 
+     Shorthand:
+     flex: 0 1 auto;
+     */
+
     }
 
     .el--1 {
-      align-self: flex-start;
+
       /* order: 2; */
     }
 
     .el--5 {
+
+      order: 1;
       align-self: stretch;
-      /* order: 1; */
     }
 
     .el--6 {
-      /* order: -1; */
+      align-self: flex-start;
+      order: -1;
     }
   </style>
 </head>
