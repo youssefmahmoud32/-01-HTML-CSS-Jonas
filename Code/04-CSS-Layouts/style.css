@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-  width: 800px;
+  width: 1200px;
   /* margin-left: auto;
   margin-right: auto; */
   margin: 0 auto;
@@ -26,7 +26,7 @@ body {
   padding-left: 40px;
   padding-right: 40px; */
   padding: 20px 40px;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
   /* height: 80px; */
 }
 
@@ -36,7 +36,7 @@ nav {
 }
 
 article {
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
 }
 
 .post-header {
@@ -51,7 +51,7 @@ aside {
   /* padding-top: 50px;
   padding-bottom: 50px; */
   padding: 50px 0;
-  width: 500px;
+  /* width: 500px; */
 }
 
 /* SMALLER ELEMENTS */
@@ -282,7 +282,7 @@ nav p {
 .related-post {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
   margin-bottom: 35px;
 }
 
@@ -290,7 +290,7 @@ nav p {
   display: block;
   font-weight: bold;
   font-style: normal;
-  margin-bottom: pxء;
+  margin-bottom: 0px;
 }
 
 .related-author {
@@ -299,8 +299,10 @@ nav p {
   margin-bottom: 0;
   font-style: italic;
 }
-
-.row {
+.related {
+  margin-left: 30px;
+}
+/* .row {
   display: flex;
   align-items: flex-start;
   gap: 75px;
@@ -318,4 +320,28 @@ aside {
 
 aside h4 {
   margin-bottom: 15px;
+}
+
+/* Grid */
+h4 {
+  margin-bottom: 25px;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 75px;
+  row-gap: 60px;
+  align-items: start;
+}
+
+.main-header {
+  grid-column: 1 / -1;
+}
+
+aside {
+  grid-column: 2 / -1;
+}
+
+footer {
+  grid-column: 1 / -1;
 }
