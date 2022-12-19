@@ -6,7 +6,7 @@
 - [x] [Section 3 – Challenge #3](https://github.com/youssefmahmoud32/-01-HTML-CSS-Jonas/tree/main/Challenges/04-Challenge)
 - [x] [Section 4 – Challenge #1](https://github.com/youssefmahmoud32/-01-HTML-CSS-Jonas/tree/main/Challenges/05-Challenge)
 - [x] [Section 4 – Challenge #2](https://github.com/youssefmahmoud32/-01-HTML-CSS-Jonas/tree/main/Challenges/06-Challenge)
-- [ ] [Section 4 – Challenge #3](./Challenges/07-Challenges/)
+- [x] [Section 4 – Challenge #3](./Challenges/07-Challenges/)
 ---
 ## Projects
 ### Omnifood
