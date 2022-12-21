@@ -5,10 +5,14 @@
 
 - Font weight
 Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
 
 - line heights
 Default: 1
-
+Small: 1.05
+Pragrapgh defualt: 1.6
 
 --- 02 COLORS
 
@@ -20,7 +24,8 @@ Grays:
 #333
 --- 05 SHADOWS
 
---- 06 Border-RADIUS
+--- 06 Border-RADIUS:
+Default: 9px.
 
 --- 07 WHITESPACE
 
@@ -28,7 +33,7 @@ SPACING SYSTEM (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 
 */
-
+/* General Compnents */
 * {
   padding: 0;
   margin: 0;
@@ -41,19 +46,90 @@ body {
   line-height: 1;
   color: #555;
 }
+/* ************** */
 
-.section-hero {
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #fdf2e9;
-  padding: 9.6rem 9.6rem;
+  height: 9.6rem;
+  padding: 0 4.8rem;
+}
+.logo {
+  height: 2.2rem;
+}
+/* ****** */
+
+/* Navigation */
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 3.2rem;
+  align-items: center;
 }
 
-.hero {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: 500;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #cf711f;
+}
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  background-color: #e67e22;
+  color: #fff;
+  border-radius: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  -ms-border-radius: 9px;
+  -o-border-radius: 9px;
+  padding: 1.2rem 2.4rem;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #cf711f;
+}
+
+/* ********** */
+
+/* General reuseable components */
+
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
   margin: 0 auto;
-  max-width: 130rem;
+}
+
+.grid {
+  display: grid;
   gap: 9.6rem;
-  align-items: center;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .heading-primary {
@@ -63,16 +139,6 @@ body {
   letter-spacing: -0.5px;
   margin-bottom: 3.2rem;
   font-weight: 700;
-}
-
-.hero-discribtion {
-  font-size: 2rem;
-  margin-bottom: 4.8rem;
-  list-style: 1.6;
-}
-
-.hero-img {
-  width: 100%;
 }
 
 .btn:visited,
@@ -96,7 +162,7 @@ body {
 }
 
 .btn-outline:visited,
-.btn:link {
+.btn-outline:link {
   background-color: #fff;
   color: #555;
 }
@@ -114,6 +180,35 @@ body {
 
 .margin-r-s {
   margin-right: 1.6rem;
+}
+
+/* **************************** */
+
+/* Hero Section */
+
+.section-hero {
+  background-color: #fdf2e9;
+  padding: 4.8rem 0 9.6rem 9.6rem;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  max-width: 130rem;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.hero-discribtion {
+  font-size: 2rem;
+  margin-bottom: 4.8rem;
+  list-style: 1.6;
+}
+
+.hero-img {
+  width: 100%;
 }
 
 .dilveried-meals {
@@ -151,3 +246,8 @@ body {
   color: #cf711f;
   font-weight: 700;
 }
+/* ********************* */
+
+/* Section How */
+
+/* *********** */
