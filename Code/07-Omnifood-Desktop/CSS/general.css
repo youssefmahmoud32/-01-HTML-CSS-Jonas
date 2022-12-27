@@ -33,7 +33,7 @@ Grays:
 
 --- 06 Border-RADIUS:
 Default: 9px.
-
+Medium: 11px.
 --- 07 WHITESPACE
 
 SPACING SYSTEM (px)
@@ -219,6 +219,10 @@ body {
 
 .margin-r-s {
   margin-right: 1.6rem;
+}
+
+strong {
+  font-weight: 500;
 }
 
 /* **************************** */
